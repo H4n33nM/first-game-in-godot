@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cuv4vme4rwno0"]
+[gd_scene load_steps=17 format=3 uid="uid://cuv4vme4rwno0"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_l4ihi"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://scenes/player.tscn" id="1_rbmkf"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dtrbka1ef726o" path="res://scenes/killzone.tscn" id="5_x8euu"]
 [ext_resource type="PackedScene" uid="uid://d2w2i5h0lhc6l" path="res://scenes/slime.tscn" id="6_l0s6b"]
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="7_8cblx"]
+[ext_resource type="PackedScene" uid="uid://rf3tmwltwg7l" path="res://scenes/fruit.tscn" id="10_y367i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ashvg"]
 texture = ExtResource("2_r1crl")
@@ -501,9 +502,6 @@ shape = SubResource("WorldBoundaryShape2D_cn5tm")
 [node name="Coin" parent="Coins" instance=ExtResource("4_28cek")]
 position = Vector2(73, 68)
 
-[node name="Coin10" parent="Coins" instance=ExtResource("4_28cek")]
-position = Vector2(32, -5)
-
 [node name="Coin2" parent="Coins" instance=ExtResource("4_28cek")]
 position = Vector2(217, 69)
 
@@ -512,12 +510,6 @@ position = Vector2(232, 69)
 
 [node name="Coin4" parent="Coins" instance=ExtResource("4_28cek")]
 position = Vector2(104, -44)
-
-[node name="Coin12" parent="Coins" instance=ExtResource("4_28cek")]
-position = Vector2(87, -44)
-
-[node name="Coin11" parent="Coins" instance=ExtResource("4_28cek")]
-position = Vector2(69, -26)
 
 [node name="Coin5" parent="Coins" instance=ExtResource("4_28cek")]
 position = Vector2(503, 37)
@@ -533,6 +525,15 @@ position = Vector2(795, -25)
 
 [node name="Coin9" parent="Coins" instance=ExtResource("4_28cek")]
 position = Vector2(584, -108)
+
+[node name="Coin10" parent="Coins" instance=ExtResource("4_28cek")]
+position = Vector2(32, -5)
+
+[node name="Coin11" parent="Coins" instance=ExtResource("4_28cek")]
+position = Vector2(69, -26)
+
+[node name="Coin12" parent="Coins" instance=ExtResource("4_28cek")]
+position = Vector2(87, -44)
 
 [node name="Coin13" parent="Coins" instance=ExtResource("4_28cek")]
 position = Vector2(565, -108)
@@ -602,3 +603,6 @@ theme_override_fonts/font = ExtResource("7_8cblx")
 theme_override_font_sizes/font_size = 8
 text = "Great job!"
 horizontal_alignment = 1
+
+[node name="Fruit" parent="." instance=ExtResource("10_y367i")]
+position = Vector2(841, -26)
